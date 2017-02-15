@@ -1,24 +1,34 @@
- How to get started?
+### Cache_Simulator
+## How to get started?
 Run the makefile in the same directory a c-sim.c
+
 After you can run ./c-sim with the following arguments.
 
 c-sim takes in 6 arguments (cache size) (associativity) (block size) (replacement_policy) (write_policy) (trace file)
 
 **(cache size)**
-This is the total size of the cache. This should be a power of 2. Also it should always be true that cachesize = number of sets * setsize * blocksize.
+This is the total size of the cache. This should be a power of 2.
+
+Also it should always be true that cachesize = number of sets * setsize * blocksize.
 
 **(associativity)**
 This can be one of three
+
 direct - simulate a direct mapped cache.
+
 assoc - simulate a fully associative cache.
+
 assoc:n - simulate an n − way associative cache. n should be a power of 2.
 
 **(blocksize)**
 This is a power of 2 int that specifies the size of the cache block.
 
 **(replacement_policy)**
+
 There are two choices for replacement policy
+
 LRU - Least recently used
+
 FIFO - first in first out
 
 **(write policy)**
