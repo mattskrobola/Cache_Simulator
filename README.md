@@ -6,7 +6,7 @@ After you can run ./c-sim with the following arguments.
 
 c-sim takes in 6 arguments (cache size) (associativity) (block size) (replacement_policy) (write_policy) (trace file)
 
-**(cache size)**
+#**(cache size)**
 
 This is the total size of the cache. This should be a power of 2.
 
@@ -14,7 +14,7 @@ Also it should always be true that cachesize = number of sets * setsize * blocks
 
 ______________________________________
 
-**(associativity)**
+###**(associativity)**
 
 This can be one of three
 
@@ -24,9 +24,13 @@ assoc - simulate a fully associative cache.
 
 assoc:n - simulate an n − way associative cache. n should be a power of 2.
 
-**(blocksize)**
+###**(blocksize)**
 
 This is a power of 2 int that specifies the size of the cache block.
+
+______________________________________
+
+
 
 **(replacement_policy)**
 
