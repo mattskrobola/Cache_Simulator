@@ -1,4 +1,4 @@
-### Cache_Simulator
+# Cache_Simulator
 ## How to get started?
 Run the makefile in the same directory a c-sim.c
 
