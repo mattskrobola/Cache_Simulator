@@ -6,7 +6,7 @@ After you can run ./c-sim with the following arguments.
 
 c-sim takes in 6 arguments (cache size) (associativity) (block size) (replacement_policy) (write_policy) (trace file)
 
-#**(cache size)**
+###**(Cache Size)**
 
 This is the total size of the cache. This should be a power of 2.
 
@@ -14,7 +14,7 @@ Also it should always be true that cachesize = number of sets * setsize * blocks
 
 ______________________________________
 
-###**(associativity)**
+###**(Associativity)**
 
 This can be one of three
 
@@ -24,7 +24,7 @@ assoc - simulate a fully associative cache.
 
 assoc:n - simulate an n − way associative cache. n should be a power of 2.
 
-###**(blocksize)**
+###**(Blocksize)**
 
 This is a power of 2 int that specifies the size of the cache block.
 
@@ -32,7 +32,7 @@ ______________________________________
 
 
 
-**(replacement_policy)**
+###**(Replacement_policy)**
 
 There are two choices for replacement policy
 
@@ -43,7 +43,7 @@ FIFO - first in first out
 ______________________________________
 
 
-**(write policy)**
+###**(Write Policy)**
 
 There are two choices.
 
@@ -54,7 +54,7 @@ wb - write back
 ______________________________________
 
 
-**(tracefile)**
+###**(Tracefile)**
 
 
 This is the name of the file that contains all of the memory accesses with the format of -
@@ -74,5 +74,23 @@ an example of a tracefile is the following
 0x804ae1c: W 0x00000014
 
 0x804ae19: R 0x00000004
+
+
+_____________________________
+
+
+### Example Input / Output
+
+/c-sim 4 direct 1 FIFO wt mytrace.txt
+
+Memory reads: 5
+
+Memory writes: 3
+
+Cache hits: 1
+
+Cache misses: 5 
+
+
 
 
